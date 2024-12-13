@@ -3,37 +3,64 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+
 }
 
 body {
-    & .titulo{
+    background-color: rgb(44, 43, 43);
+
+    & .titulo {
         display: flex;
-        padding-left: 10vb;
         align-items: center;
+
     }
+
     & .menu {
         background-color: rgb(63, 63, 63);
-        width: 100;
-        height:auto;
+        width: 100%;
+        height: 90px;
         display: flex;
         justify-content: space-between;
-        
-    }
-    & .logo{
-        width: 10%;
-        height: auto;
-        
-    }
-    & menu{
-        display: flex; 
-        padding-right: 20vb;
-        gap: 15%;
         align-items: center;
+
+
     }
-    & .pesquisa{
-         display: flex;
-         
-          
+
+    & .logo {
+        width: 25%;
+        height: auto;
+
+
     }
-    
+
+    & menu {
+        display: flex;
+        gap: 50px;
+        padding-right:30px ;
+
+
+    }
+}
+
+div menu .hover:hover{
+    cursor: pointer;
+}
+
+div div input{
+    width: 300px;
+}
+
+div .pesquisa {
+    display: flex;
+}
+
+div .titulo {
+    width: 360px;
+}
+
+body div input { 
+    border-radius: 10px 0px 0px 10px;
 }
